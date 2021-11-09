@@ -4,13 +4,13 @@
 
 # Beast of the East Campervans
 
-This isa web application for Beast of the East Campervans ltd, a campervan rental service in Scotland.
+This is a web application for Beast of the East Campervans ltd, a campervan rental service in Scotland(UK).
 
 The application is built with RedwoodJS, Theme-UI and CSS.gg.
 
 ### Setup
 
-The application is built with yarn
+The application is packaged with yarn
 
 ```terminal
 yarn install
