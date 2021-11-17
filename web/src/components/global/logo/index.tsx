@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
-import { logo, logoWrap, logoText } from 'src/components/logo/styles'
+import { logo, logoWrap, logoText } from 'src/components/global/logo/styles'
 
 const Logo = () => {
   return (

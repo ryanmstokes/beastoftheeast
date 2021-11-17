@@ -1,10 +1,10 @@
 /** @jsx jsx */
-import { jsx, Link, Button, Flex, Box } from 'theme-ui'
-import { nav } from 'src/components/nav/styles'
-import { Profile, Menu } from 'css.gg'
-import NavLinks from 'src/components/nav-links'
-import Cta from 'src/components/cta'
-import ProfileLink from 'src/components/profile-link'
+import { jsx, Button, Flex } from 'theme-ui'
+import { nav } from 'src/components/global/navigation/nav/styles'
+import { Menu } from 'css.gg'
+import NavLinks from 'src/components/global/navigation/nav-links'
+import Cta from 'src/components/buttons/cta'
+import ProfileLink from 'src/components/buttons/profile-link'
 
 const Nav = () => {
   const NavLinksData = [

@@ -1,9 +1,9 @@
 /** @jsx jsx */
 import React from 'react'
 import { jsx, Card, Heading, Box, Paragraph } from 'theme-ui'
-import { hero, fakeBackdrop } from 'src/components/hero/styles'
+import { hero, fakeBackdrop } from 'src/components/cards/hero/styles'
 import 'react-datepicker/dist/react-datepicker.css'
-import BookingForm from 'src/components/booking-form'
+import BookingForm from 'src/components/form/inputs/forms/booking-form'
 
 const Hero = () => {
   const title = 'Discover Scotland with BOE Campervans!'

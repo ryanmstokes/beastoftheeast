@@ -1,7 +1,7 @@
 import { Form } from '@redwoodjs/forms'
 import { Button, Label, Box, Flex } from 'theme-ui'
-import SelectInput from 'src/components/select-input'
-import DateInput from 'src/components/date-input'
+import SelectInput from 'src/components/form/inputs/select-input'
+import DateInput from 'src/components/form/inputs/date-input'
 
 const BookingForm = () => (
   <Box>

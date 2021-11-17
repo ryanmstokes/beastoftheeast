@@ -1,5 +1,5 @@
 import { Box, Container } from 'theme-ui'
-import { footer } from 'src/components/footer/styles/'
+import { footer } from 'src/components/global/footer/styles'
 
 const Footer = () => {
   return (

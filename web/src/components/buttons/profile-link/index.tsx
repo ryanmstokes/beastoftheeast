@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Box, Flex, Link } from 'theme-ui'
 import { Profile } from 'css.gg'
-import { profileLink } from 'src/components/profile-link/styles'
+import { profileLink } from 'src/components/buttons/profile-link/styles'
 
 const ProfileLink = () => (
   <Box>

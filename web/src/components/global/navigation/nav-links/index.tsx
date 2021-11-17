@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { Link, jsx } from 'theme-ui'
-import { navLink } from 'src/components/nav-links/styles'
+import { navLink } from 'src/components/global/navigation/nav-links/styles'
 
 type navLinksType = {
   href: string

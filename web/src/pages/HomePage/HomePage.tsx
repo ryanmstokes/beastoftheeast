@@ -2,10 +2,10 @@
 import { MetaTags } from '@redwoodjs/web'
 import { ThemeProvider } from 'theme-ui'
 import { theme } from '../../../theme/index'
-import AppBar from 'src/components/app-bar/'
-import Hero from 'src/components/hero'
-import VideoBG from 'src/components/video-bg'
-import Footer from 'src/components/footer'
+import AppBar from 'src/components/global/app-bar'
+import Hero from 'src/components/cards/hero'
+import VideoBG from 'src/components/video/video-bg'
+import Footer from 'src/components/global/footer'
 
 const HomePage = () => {
   return (

@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
-import { videoBG } from 'src/components/video-bg/styles'
+import { videoBG } from 'src/components/video/video-bg/styles'
 
 const VideoBG = () => (
   <video id="background-video" loop autoPlay sx={videoBG}>
