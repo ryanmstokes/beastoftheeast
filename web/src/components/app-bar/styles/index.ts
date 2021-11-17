@@ -1,5 +1,5 @@
 const appBar = {
-  bg: 'background',
+  bg: 'background.primary',
   width: 'full',
   display: 'flex',
   pb: 3,
@@ -11,6 +11,7 @@ const appBar = {
 const container = {
   display: 'flex',
   justifyContent: 'space-between',
+  width: ['containerMobile', 'containerMobile', 'containerMobile', 'full'],
 }
 
 export { container, appBar }

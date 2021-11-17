@@ -1,38 +1,27 @@
 /** @jsx jsx */
 import { jsx, Link, Button, Flex, Box } from 'theme-ui'
-import { nav, cta, navItem, burger, noWrap } from 'src/components/nav/styles'
+import { nav } from 'src/components/nav/styles'
 import { Profile, Menu } from 'css.gg'
+import NavLinks from 'src/components/nav-links'
+import Cta from 'src/components/cta'
+import ProfileLink from 'src/components/profile-link'
 
 const Nav = () => {
+  const NavLinksData = [
+    { href: '/about', title: 'About' },
+    { href: '/motorhomes', title: 'Motorhomes' },
+    { href: '/prices', title: 'Prices' },
+  ]
   return (
     <Flex sx={{ minWidth: 'auto' }}>
       <Flex>
         <nav sx={nav}>
-          {/* <Link href="/" sx={styles.navItem}>
-            <Button>Book</Button>
-          </Link> */}
-          <Link href="/" sx={navItem}>
-            <Button sx={cta}>
-              <Box style={{ whiteSpace: 'nowrap' }}>Book Now</Box>
-            </Button>
-          </Link>
-          <Link href="/" sx={navItem}>
-            About
-          </Link>
-          <Link href="/" sx={navItem}>
-            Motorhomes
-          </Link>
-          <Link href="/" sx={navItem}>
-            Prices
-          </Link>
-          <Link href="/">
-            <Flex>
-              <Profile sx={{ color: 'text' }} />
-            </Flex>
-          </Link>
+          <Cta />
+          <NavLinks links={NavLinksData} />
+          <ProfileLink />
         </nav>
       </Flex>
-      <Button variant="burger" sx={burger}>
+      <Button variant="burger">
         <Menu />
       </Button>
     </Flex>

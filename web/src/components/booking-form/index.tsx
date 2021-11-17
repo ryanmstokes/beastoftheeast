@@ -54,7 +54,12 @@ const BookingForm = () => (
           </Box>
         </Flex>
         <Flex sx={{ justifyContent: 'flex-end', mt: 4 }}>
-          <Button sx={{ backgroundColor: 'text', cursor: 'pointer' }}>
+          <Button
+            sx={{
+              backgroundColor: 'colors.background.primary',
+              cursor: 'pointer',
+            }}
+          >
             Book Now
           </Button>
         </Flex>

@@ -7,35 +7,52 @@ export const theme: Theme = {
     monospace: 'Menlo, monospace',
   },
   colors: {
-    text: '#000',
-    background: '#fff',
+    dark: {
+      primary: '#000',
+      secondary: '#2d2b2b',
+    },
     primary: '#33e',
-    parragraph: '#4a4a4a',
+    secondary: 'blue',
+    paragraph: '#4a4a4a',
+    light: '#fff',
+    background: {
+      primary: '#fff',
+      secondary: 'whitesmoke',
+      transparent: 'rgba(255,255,255,0)',
+    },
+  },
+  borders: {
+    primary: '1px solid',
   },
   sizes: {
     full: '100%',
     container: '1028px',
+    containerMobile: '95%',
     logo: '50px',
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 40, 48, 64],
   buttons: {
     primary: {
-      color: 'background',
-      bg: 'primary',
+      color: 'light',
+      bg: 'dark.primary',
       '&:hover': {
-        bg: 'text',
+        backgroundColor: 'dark.secondary',
+        color: 'grey',
       },
     },
     secondary: {
-      color: 'background',
-      bg: 'secondary',
+      color: 'light',
+      bg: 'background.secondary',
     },
     burger: {
-      color: 'text',
+      color: 'dark.primary',
       background: 'none',
-      display: 'flex',
       alignItems: 'center',
       cursor: 'pointer',
+      display: ['flex', 'none'],
+      lineHeight: '11px',
+      marginTop: '10px',
+      opacity: 0.8,
     },
   },
   text: {

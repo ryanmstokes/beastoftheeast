@@ -7,17 +7,16 @@ import BookingForm from 'src/components/booking-form'
 
 const Hero = () => {
   const title = 'Discover Scotland with BOE Campervans!'
-  const title2 = 'Book your campervan trip,'
-  const title3 = 'from just £35 per day, '
-  const title4 = 'with full insurance and mileage!'
+  const subTitle = 'from just £35 per day,'
+  const subTitleLG =
+    'Book your campervan trip,from just £35 per day, with full insurance and mileage!'
   return (
     <Card variant="primary" sx={hero}>
       <Box sx={fakeBackdrop}></Box>
       <Heading as="h1">{title}</Heading>
-      <Paragraph sx={{ mb: 3 }}>
-        <Box sx={{ display: ['none', 'inline'] }}>{title2} &nbsp;</Box>
-        {title3}
-        <Box sx={{ display: ['none', 'inline'] }}>{title4}</Box>
+      <Paragraph sx={{ mb: 3, mt: 2 }}>
+        <Box sx={{ display: ['none', 'inline'] }}>{subTitleLG} &nbsp;</Box>
+        <Box sx={{ display: ['inline', 'none'] }}>{subTitle}</Box>
       </Paragraph>
       <BookingForm />
     </Card>

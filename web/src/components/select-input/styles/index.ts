@@ -4,16 +4,16 @@ const iconWrap = {
   position: 'absolute',
   right: 3,
   top: '12px',
-  bg: 'whitesmoke',
 }
 
 const iconStyle = {
-  color: 'black',
+  color: 'colors.dark.primary',
 }
 
 const selectFieldWrap = {
-  bg: 'whitesmoke',
-  border: '1px solid #2d2b2b',
+  bg: 'background.secondary',
+  border: 'primary',
+  borderColor: 'colors.dark.secondary',
   borderRadius: '4px',
   mb: 3,
   cursor: 'pointer',
@@ -30,7 +30,7 @@ const selectField = {
   ['-moz-appearance']: 'none',
   ['-webkit-appearance']: 'none',
   zIndex: 99,
-  background: 'rgba(255,255,255,0)',
+  background: 'transparent',
 }
 
 export { iconWrap, iconStyle, selectFieldWrap, selectField }
