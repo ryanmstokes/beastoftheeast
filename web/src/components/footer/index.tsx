@@ -1,17 +1,10 @@
 import { Box, Container } from 'theme-ui'
+import { footer } from 'src/components/footer/styles/'
 
 const Footer = () => {
   return (
-    <Box
-      sx={{
-        position: 'fixed',
-        bottom: 0,
-        bg: 'white',
-        height: '30px',
-        width: 'full',
-      }}
-    >
-      <Container>Hello</Container>
+    <Box sx={footer}>
+      <Container>Footer content to come!</Container>
     </Box>
   )
 }
