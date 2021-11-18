@@ -19,6 +19,7 @@ export const theme: Theme = {
       primary: '#fff',
       secondary: 'whitesmoke',
       transparent: 'rgba(255,255,255,0)',
+      icon: '#2d2b2b',
     },
   },
   borders: {

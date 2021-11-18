@@ -3,7 +3,7 @@ import React from 'react'
 import { jsx, Card, Heading, Box, Paragraph } from 'theme-ui'
 import { hero, fakeBackdrop } from 'src/components/cards/hero/styles'
 import 'react-datepicker/dist/react-datepicker.css'
-import BookingForm from 'src/components/form/inputs/forms/booking-form'
+import BookingForm from 'src/components/form/forms/booking-form'
 
 const Hero = () => {
   const title = 'Discover Scotland with BOE Campervans!'

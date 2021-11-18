@@ -1,16 +1,12 @@
 /** @jsx jsx */
-import { jsx, Box, Flex, Link } from 'theme-ui'
+import { jsx, IconButton } from 'theme-ui'
 import { Profile } from 'css.gg'
 import { profileLink } from 'src/components/buttons/profile-link/styles'
 
 const ProfileLink = () => (
-  <Box>
-    <Link href="/">
-      <Flex>
-        <Profile sx={profileLink} />
-      </Flex>
-    </Link>
-  </Box>
+  <IconButton title="Login">
+    <Profile sx={profileLink} />
+  </IconButton>
 )
 
 export default ProfileLink
