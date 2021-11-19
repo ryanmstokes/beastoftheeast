@@ -9,6 +9,7 @@
 
 import { Set, Router, Route } from '@redwoodjs/router'
 import BookingsLayout from 'src/layouts/BookingsLayout'
+import DefaultLayout from 'src/Layouts/DefaultLayout'
 
 const Routes = () => {
   return (
@@ -20,7 +21,9 @@ const Routes = () => {
         <Route path="/bookings" page={BookingBookingsPage} name="bookings" />
       </Set>
       <Route path="/booking" page={BookingPage} name="booking" />
-      <Route path="/" page={HomePage} name="home" />
+      <Set wrap={DefaultLayout}>
+        <Route path="/" page={HomePage} name="home" />
+      </Set>
       <Route notfound page={NotFoundPage} />
     </Router>
   )
