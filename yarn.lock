@@ -14029,6 +14029,14 @@ npmlog@^4.0.0, npmlog@^4.1.2:
     gauge "~2.7.3"
     set-blocking "~2.0.0"
 
+npx-languages@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/npx-languages/-/npx-languages-1.0.2.tgz#2a1e4da3a0a2871d3ec006b30ea778dad064e79f"
+  integrity sha512-DA3QbytyICuLpZa9BChiRpG7arlhQ+E6yaWtFClo5+Z2ktXPd/vfLicZBBM4y4vZvRTZfA0xcSkWTmwh7ihMxA==
+  dependencies:
+    inquirer "^7.3.3"
+    node-fetch "^2.6.1"
+
 nth-check@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/nth-check/-/nth-check-2.0.1.tgz#2efe162f5c3da06a28959fbd3db75dbeea9f0fc2"
@@ -15770,6 +15778,11 @@ react-jsx@^1.0.0:
     babel-standalone "^6.4.4"
     react "0.14.x"
     react-dom "^0.14.7"
+
+react-lang-dropdown@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-lang-dropdown/-/react-lang-dropdown-1.0.4.tgz#3020e090822414352d9129d5748154fb3c2a8dbd"
+  integrity sha512-R+sFm3YNysdi+Y+AWgkHgHpfXWxXqTHBPuBeZk0mEaX4+7C4p1AQqkqafHq1DDk9mVeObU7HgBwqmtekq2o4Fg==
 
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"

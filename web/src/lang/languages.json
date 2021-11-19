@@ -1,0 +1,26 @@
+{
+  "de": {
+    "name": "German",
+    "nativeName": "Deutsch",
+    "emoji": "🇩🇪",
+    "content": {},
+    "bcp47": "de",
+    "native": "Deutsch"
+  },
+  "en": {
+    "name": "English",
+    "emoji": "🇬🇧",
+    "nativeName": "English",
+    "content": {},
+    "bcp47": "en",
+    "native": "English"
+  },
+  "es": {
+    "name": "Spanish; Castilian",
+    "emoji": "🇪🇸",
+    "nativeName": "español, castellano",
+    "content": {},
+    "bcp47": "es",
+    "native": "español, castellano"
+  }
+}

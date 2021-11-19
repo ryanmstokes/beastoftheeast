@@ -5,6 +5,7 @@ import { Menu } from 'css.gg'
 import NavLinks from 'src/components/global/navigation/nav-links'
 import Cta from 'src/components/buttons/cta'
 import ProfileLink from 'src/components/buttons/profile-link'
+import LanguageDropDown from 'src/components/global/language-dropdown'
 
 const Nav = () => {
   const NavLinksData = [
@@ -12,13 +13,15 @@ const Nav = () => {
     { href: '/motorhomes', title: 'Motorhomes' },
     { href: '/prices', title: 'Prices' },
   ]
+
   return (
     <Flex sx={{ minWidth: 'auto' }}>
       <Flex>
         <nav sx={nav}>
           <Cta />
           <NavLinks links={NavLinksData} />
-          <ProfileLink />
+          <LanguageDropDown />
+          <ProfileLink sx={{ mt: -1 }} />
         </nav>
       </Flex>
       <Button variant="burger">
