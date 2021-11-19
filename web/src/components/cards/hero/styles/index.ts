@@ -4,13 +4,13 @@ const hero = {
   display: 'block',
   margin: '0 auto',
   marginTop: '6%',
-  borderRadius: '19px',
+  borderRadius: '9px',
   '-webkit-scrollbar': {
     display: 'none',
   },
-  p: '35px',
+  p: '45px 70px',
   pb: '47px',
-  maxWidth: ['90%', '490px'],
+  maxWidth: ['90%', '560px'],
   bg: 'transparent',
 }
 
@@ -23,7 +23,7 @@ const fakeBackdrop = {
   width: 'full',
   opacity: '0.8',
   backgroundColor: 'background.primary',
-  borderRadius: '19px',
+  borderRadius: '9px',
   '-webkit-scrollbar': {
     display: 'none',
   },

@@ -1,71 +1,54 @@
-import { Form } from '@redwoodjs/forms'
-import { Button, Label, Box, Flex } from 'theme-ui'
+/** @jsx jsx */
+import { Form, Submit } from '@redwoodjs/forms'
+import { useForm } from 'react-hook-form'
+import { jsx, Button, Box, Flex, Label } from 'theme-ui'
 import SelectInput from 'src/components/form/inputs/select-input'
 import DateInput from 'src/components/form/inputs/date-input'
+import {
+  dateWrap,
+  SubmitGhost,
+  alignSubmit,
+  columGap,
+} from 'src/components/form/forms/booking-form/styles'
 
-const BookingForm = () => (
-  <Box>
-    <Form onSubmit={(e) => e.preventDefault()}>
-      <Box>
-        <Label
-          htmlFor="location"
-          variant="label"
-          sx={{
-            mb: 1,
-          }}
-        >
-          Location
-        </Label>
-        <SelectInput />
-        <Flex sx={{ columnGap: '20px' }}>
-          <Box
-            sx={{
-              width: '50%',
-              cursor: 'pointer',
-            }}
-          >
-            <Label
-              htmlFor="start"
-              variant="label"
-              sx={{
-                mb: 1,
-              }}
-            >
-              Pick up
-            </Label>
-            <DateInput title="from" />
-          </Box>
-          <Box
-            sx={{
-              width: '50%',
-              cursor: 'pointer',
-            }}
-          >
-            <Label
-              htmlFor="end"
-              variant="label"
-              sx={{
-                mb: 1,
-              }}
-            >
-              Return
-            </Label>
-            <DateInput title="to" />
-          </Box>
-        </Flex>
-        <Flex sx={{ justifyContent: 'flex-end', mt: 4 }}>
-          <Button
-            sx={{
-              backgroundColor: 'colors.background.primary',
-              cursor: 'pointer',
-            }}
-          >
-            Book Now
-          </Button>
-        </Flex>
-      </Box>
-    </Form>
-  </Box>
-)
+const BookingForm = () => {
+  const formMethods = useForm()
+
+  const title = 'Location'
+  const title2 = 'Pick up'
+  const title3 = 'Return'
+  const titleBtn = 'Check Availability'
+
+  const onSubmit = (data) => {
+    //console.log(data)
+    formMethods.reset()
+  }
+
+  return (
+    <Box>
+      <Form formMethods={formMethods} onSubmit={onSubmit}>
+        <Box>
+          <Label>{title}</Label>
+          <SelectInput />
+          <Flex sx={columGap}>
+            <Flex sx={dateWrap}>
+              <Label>{title2}</Label>
+              <DateInput title="from" />
+            </Flex>
+            <Flex sx={dateWrap}>
+              <Label>{title3}</Label>
+              <DateInput title="to" />
+            </Flex>
+          </Flex>
+          <Flex sx={alignSubmit}>
+            <Submit style={SubmitGhost}>
+              <Button>{titleBtn}</Button>
+            </Submit>
+          </Flex>
+        </Box>
+      </Form>
+    </Box>
+  )
+}
 
 export default BookingForm

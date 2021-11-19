@@ -1,9 +1,8 @@
 const dateWrap = {
   border: 'primary',
-  borderColor: 'dark.secondary',
   p: 0,
-  borderRadius: '4px',
   mb: 0,
+  width: 'full',
 }
 
 const dateInput = {
@@ -14,7 +13,6 @@ const dateInput = {
   mb: 0,
   px: 3,
   py: '13px',
-  borderRadius: '4px',
   '::-webkit-calendar-picker-indicator': {
     cursor: 'pointer',
   },

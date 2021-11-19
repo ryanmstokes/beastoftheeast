@@ -4,7 +4,7 @@ const iconWrap = {
   height: '29px',
   width: '29px',
   alignItems: 'center',
-  color: 'light',
+  color: 'light.primary',
   ml: 2,
 }
 const icon = {

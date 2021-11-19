@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { Box, Flex, jsx } from 'theme-ui'
-import { SelectField } from '@redwoodjs/forms'
+import { SelectField, FieldError } from '@redwoodjs/forms'
 import { ChevronDown } from 'css.gg'
 import {
   iconWrap,
@@ -21,14 +21,24 @@ const SelectInput = () => {
     { title: 'Inverness' },
   ]
   return (
-    <Flex sx={selectFieldWrap}>
-      <SelectField name="location" id="location" sx={selectField}>
-        <SelectOptions options={selectOptions} />
-      </SelectField>
-      <Box sx={iconWrap}>
-        <ChevronDown style={iconStyle} />
-      </Box>
-    </Flex>
+    <Box>
+      <Flex sx={selectFieldWrap}>
+        <SelectField
+          name="location"
+          id="location"
+          sx={selectField}
+          validation={{
+            required: true,
+          }}
+        >
+          <SelectOptions options={selectOptions} />
+        </SelectField>
+        <Box sx={iconWrap}>
+          <ChevronDown style={iconStyle} />
+        </Box>
+      </Flex>
+      <FieldError name="location" className="error-message" />
+    </Box>
   )
 }
 

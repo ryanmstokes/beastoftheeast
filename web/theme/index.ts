@@ -14,16 +14,20 @@ export const theme: Theme = {
     primary: '#33e',
     secondary: 'blue',
     paragraph: '#4a4a4a',
-    light: '#fff',
+    light: {
+      primary: '#fff',
+      secondary: '#919191',
+    },
     background: {
       primary: '#fff',
       secondary: 'whitesmoke',
       transparent: 'rgba(255,255,255,0)',
       icon: '#2d2b2b',
+      dark: '#2d2b2b',
     },
   },
   borders: {
-    primary: '1px solid',
+    primary: '1px solid #bdbcbc',
   },
   sizes: {
     full: '100%',
@@ -34,16 +38,36 @@ export const theme: Theme = {
   fontSizes: [12, 14, 16, 20, 24, 32, 40, 48, 64],
   buttons: {
     primary: {
-      color: 'light',
+      color: 'light.primary',
       bg: 'dark.primary',
       '&:hover': {
         backgroundColor: 'dark.secondary',
         color: 'grey',
       },
+      pl: 4,
+      pr: 4,
+      pt: 3,
+      pb: 3,
+      fontSize: 2,
+      fontFamily: 'heading',
+      cursor: 'pointer',
     },
     secondary: {
-      color: 'light',
+      color: 'light.primary',
       bg: 'background.secondary',
+    },
+    nav: {
+      color: 'white',
+      bg: 'dark.secondary',
+      '&:hover': {
+        backgroundColor: 'dark.secondary',
+        color: 'grey',
+      },
+      px: 3,
+      pt: 2,
+      pb: 2,
+      fontSize: 2,
+      fontFamily: 'heading',
     },
     burger: {
       color: 'dark.primary',
@@ -68,6 +92,22 @@ export const theme: Theme = {
       fontSize: [4, 3],
       color: 'dark',
       fontWeight: '100',
+    },
+    footer: {
+      fontSize: 2,
+      fontWeight: '100',
+    },
+  },
+  links: {
+    nav: {
+      mr: 3,
+      fontSize: [1, 2, 2],
+      fontFamily: 'heading',
+      color: 'light.secondary',
+      textDecoration: 'none',
+      ':hover': {
+        color: 'dark.secondary',
+      },
     },
   },
   forms: {

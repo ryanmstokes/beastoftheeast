@@ -10,21 +10,21 @@ import {
 const SocialMediaLinks = () => (
   <Flex sx={{ alignItems: 'center' }}>
     <Flex>
-      <Heading as="h4" variant="paragraph">
+      <Heading as="h4" variant="footer">
         Find us on:
       </Heading>
     </Flex>
-    <Flex sx={iconWrap}>
+    <Flex sx={iconWrap} style={{ background: '#4267B2' }}>
       <Box sx={{ width: 'full' }}>
         <Facebook sx={icon} />
       </Box>
     </Flex>
-    <Flex sx={iconWrap}>
+    <Flex sx={iconWrap} style={{ background: '#bc2a8d' }}>
       <Box sx={{ width: 'full' }}>
         <Instagram sx={icon} />
       </Box>
     </Flex>
-    <Flex sx={iconWrap}>
+    <Flex sx={iconWrap} style={{ background: '#c4302b' }}>
       <Box sx={{ width: 'full' }}>
         <Youtube sx={irregularIcon} />
       </Box>

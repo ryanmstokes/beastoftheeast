@@ -4,7 +4,7 @@ import { cta, navItem, noWrap } from 'src/components/buttons/cta/styles'
 
 const Cta = () => (
   <Link href="/" sx={navItem}>
-    <Button sx={cta}>
+    <Button sx={cta} variant="nav">
       <Box sx={noWrap}>Book Now</Box>
     </Button>
   </Link>

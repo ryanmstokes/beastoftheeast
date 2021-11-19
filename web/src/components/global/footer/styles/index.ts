@@ -1,8 +1,9 @@
 const footer = {
+  display: ['none', 'Flex'],
   position: 'fixed',
   bottom: 0,
   bg: 'white',
-  height: '50px',
+  height: '80px',
   width: 'full',
   '@media screen and (max-height: 850px) and (min-width: 1000px)': {
     display: 'none',
