@@ -5,14 +5,16 @@ import NavLinks from 'src/components/global/navigation/nav-links'
 import { nav } from 'src/components/global/footer/styles'
 import SocialMediaLinks from 'src/components/buttons/social-media-links'
 
-const Footer = () => {
+const Footer = ({ theme }) => {
   const NavLinksData = [
     { href: '/support', title: 'Support' },
     { href: '/legal disclaimer', title: 'Disclaimer' },
     { href: '/sitemap', title: 'Sitemap' },
   ]
+  let position = 'fixed'
+  theme === 'default' ? (position = 'relative') : null
   return (
-    <Flex sx={footer}>
+    <Flex sx={footer} style={{ position: position }}>
       <Container sx={container}>
         <Flex>
           <img

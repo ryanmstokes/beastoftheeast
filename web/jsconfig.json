@@ -26,5 +26,5 @@
     "src",
     "../.redwood/types/includes/all-*",
     "../.redwood/types/includes/web-*",
-  ]
+  ],
 }

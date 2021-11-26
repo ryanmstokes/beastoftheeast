@@ -2,7 +2,7 @@ const appBar = {
   bg: 'background.primary',
   width: 'full',
   display: 'flex',
-  pb: '12px',
+  pb: 2,
   pt: 2,
   pr: 2,
   justifyContent: 'center',

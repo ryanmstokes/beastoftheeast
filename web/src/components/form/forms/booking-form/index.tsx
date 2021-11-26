@@ -10,6 +10,7 @@ import {
   alignSubmit,
   columGap,
 } from 'src/components/form/forms/booking-form/styles'
+import { navigate, routes } from '@redwoodjs/router'
 
 const BookingForm = () => {
   const formMethods = useForm()
@@ -22,6 +23,7 @@ const BookingForm = () => {
   const onSubmit = (data) => {
     //console.log(data)
     formMethods.reset()
+    navigate(routes.newBooking())
   }
 
   return (

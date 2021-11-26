@@ -7,13 +7,14 @@ type DefaultLayoutProps = {
   children?: React.ReactNode
 }
 
-const DefaultLayout = ({ children }: DefaultLayoutProps) => {
+const DefaultLayout = (props: DefaultLayoutProps) => {
+  console.log('theme', props)
   return (
     <>
       <ThemeProvider theme={theme}>
         <AppBar />
-        {children}
-        <Footer />
+        {props.children}
+        <Footer theme={props.theme} />
       </ThemeProvider>
     </>
   )

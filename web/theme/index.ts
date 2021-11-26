@@ -31,7 +31,7 @@ export const theme: Theme = {
   },
   sizes: {
     full: '100%',
-    container: '1028px',
+    container: ['95%', '95%', '1028px'],
     containerMobile: '95%',
     logo: '50px',
   },
@@ -74,7 +74,7 @@ export const theme: Theme = {
       background: 'none',
       alignItems: 'center',
       cursor: 'pointer',
-      display: ['flex', 'none'],
+      display: ['flex', 'flex', 'none'],
       lineHeight: '11px',
       marginTop: '10px',
       opacity: 0.8,
@@ -92,6 +92,8 @@ export const theme: Theme = {
       fontSize: [4, 3],
       color: 'dark',
       fontWeight: '100',
+      mt: 2,
+      lineHeight: '1.7rem',
     },
     footer: {
       fontSize: 2,
@@ -119,6 +121,14 @@ export const theme: Theme = {
   cards: {
     primary: {
       background: '#f4f4f4',
+    },
+  },
+  layout: {
+    container: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      width: ['containerMobile', 'containerMobile'],
+      alignItems: 'center',
     },
   },
 }

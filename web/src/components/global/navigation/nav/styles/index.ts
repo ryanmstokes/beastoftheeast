@@ -1,7 +1,7 @@
 const nav = {
-  mb: 1,
+  mt: 2,
   alignSelf: 'end',
-  display: ['none', 'flex'],
+  display: ['none', 'none', 'flex'],
   alignItems: 'center',
 }
 

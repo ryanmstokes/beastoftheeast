@@ -28,8 +28,9 @@
     "src",
     "../.redwood/types/includes/all-*",
     "../.redwood/types/includes/web-*",
+    "global.d.ts"
   ],
   "resolve": {
-    "extensions": [".ts", ".js"],
+    "extensions": [".ts", ".js", ".jpg", ".jpeg"],
   }
 }

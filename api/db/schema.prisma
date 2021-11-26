@@ -14,3 +14,21 @@ model Booking {
   name     String
   lastName String
 }
+
+model Vehicle {
+  id          Int    @id @default(autoincrement())
+  imgID       Int
+  title       String
+  description String
+  passengers  Int
+  extras      String
+  cover       String
+  fees        String
+  price       Int
+}
+
+model Image {
+  id    Int    @id @default(autoincrement())
+  title String
+  url   String
+}

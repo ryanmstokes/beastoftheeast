@@ -51,20 +51,25 @@ const Booking = ({ booking }) => {
     <>
       <div className="rw-segment">
         <header className="rw-segment-header">
-          <h2 className="rw-heading rw-heading-secondary">Booking {booking.id} Detail</h2>
+          <h2 className="rw-heading rw-heading-secondary">
+            Booking {booking.id} Detail
+          </h2>
         </header>
         <table className="rw-table">
           <tbody>
             <tr>
               <th>Id</th>
               <td>{booking.id}</td>
-            </tr><tr>
+            </tr>
+            <tr>
               <th>Email</th>
               <td>{booking.email}</td>
-            </tr><tr>
+            </tr>
+            <tr>
               <th>Name</th>
               <td>{booking.name}</td>
-            </tr><tr>
+            </tr>
+            <tr>
               <th>Last name</th>
               <td>{booking.lastName}</td>
             </tr>
